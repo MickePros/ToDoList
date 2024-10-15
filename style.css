@@ -1,0 +1,33 @@
+div#todo {
+    background-color: white ;
+}
+
+ul#todolist {
+    list-style: none;
+    padding: 0;
+}
+
+ul#todolist li {
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+}
+
+ul#todolist>li:nth-child(odd){
+    background-color: #dbdbdb;
+}
+
+i.btn-close.icon {
+    background-color: red;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+ul#todolist li.done {
+    text-decoration: line-through;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+ul#todolist li.remove {
+    background-color: rgba(255, 0, 0, 0.3);
+}
