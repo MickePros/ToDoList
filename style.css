@@ -2,9 +2,17 @@ div#todo {
     background-color: white ;
 }
 
+div#form {
+    display: inline-block;
+    background-color: gold;
+    padding: 5px 5px;
+    border: 5px outset goldenrod;
+}
+
 ul#todolist {
     list-style: none;
     padding: 0;
+    font-family: cursive; 
 }
 
 ul#todolist li {
@@ -18,9 +26,12 @@ ul#todolist>li:nth-child(odd){
 
 i.btn-close.icon {
     background-color: red;
-    margin-left: 10px;
-    display: inline-block;
     vertical-align: bottom;
+    float: right;
+}
+
+button#add {
+    margin-left: 5px;
 }
 
 ul#todolist li.done {

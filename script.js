@@ -4,20 +4,20 @@ const addNewTask = (text) => {
 }
 
 document.querySelector("#add").addEventListener('click', () => {
-    addNewTask(document.querySelector("#input").value);
+    let text = document.querySelector("#input").value;
+    if (text != '')
+        addNewTask(text);
 });
 
 document.querySelector("#todo").addEventListener('click', (e) => {
-    if (e.target.tagName == 'I') {
+    if (e.target.tagName == 'I')
         e.target.parentNode.remove();
-    }
     e.target.classList.toggle('done');
 });
 
 "mouseover mouseout".split(" ").forEach( (each) => {
     document.querySelector("#todo").addEventListener(each, (e) => {
-        if (e.target.tagName == 'I') {
+        if (e.target.tagName == 'I')
             e.target.parentNode.classList.toggle('remove');
-        }
     });
 });
